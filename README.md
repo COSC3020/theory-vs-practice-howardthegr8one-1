@@ -30,6 +30,8 @@ Question 2)
 
 Question 3)
 
-- The algorithm might be implemented in such a way that the slowness isn't apparent until the input size is large enough. For example a brute force implementation to solve the traveling salesperson problem will run fine with an input smaller than say 10, but attempting to search among 100 or even 50 and the algorithm will likely run out of memory before finishing. Perhaps this binary search algorithm is implemented similarly. 
-- It could simply be a hardware issue, or different data sets as input. If the programmer tested the runtime for 1000 elements with a different input than when testing 10000 elements this could account for such a large change in runtime, or merely testing in one environment, and then testing again in a different environment.
-- The data structure the algorithm uses doesn't scale well with larger inputs. Even if the algorithm logically works, an ineffecient choice of data structure could be increasing the runtime beyond what the typical traversal of a binary tree suggests.
+- Our time estimate was based on our assumption that the runtime complexity is $log(n)$, however the actual time it takes to run could be slower than estimated due to a constant of some kind, perhaps the actual runtime is closer to $10 log(n)$ or $100 log(n)$ which would account for a much slower runtime in practice. 
+
+- When testing the algorithm with 1000 elements better hardware could've been used, or no software was running in the background, whereas when testing with 10,000 elements slower hardware with other software running could slow down the actual time beyond what we estimated from the assumed time complexity.
+
+- The actual implementation may not be $log(n)$ as we would assume for a binary search. The implementation might be poorly written and thus perform much slower, although this would mean that the runtime is NOT actualy $log(n)$.
