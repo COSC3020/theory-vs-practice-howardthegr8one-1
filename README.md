@@ -30,8 +30,8 @@ Question 2)
 
 Question 3)
 
-- Our time estimate was based on our assumption that the runtime complexity is $log(n)$, however the actual time it takes to run could be slower than estimated due to a constant of some kind, perhaps the actual runtime is closer to $10 log(n)$ or $100 log(n)$ which would account for a much slower runtime in practice. 
+- Similarly to the first question, our estimate was based on the asymptotic runtime complexity. Therefore since the algorithm is performing slower in practice there could be lower order terms or constants that were unaccounted for in the asymptotic complexity that would account for a slower runtime in practice. 
 
 - When testing the algorithm with 1000 elements better hardware could've been used, or no software was running in the background, whereas when testing with 10,000 elements slower hardware with other software running could slow down the actual time beyond what we estimated from the assumed time complexity.
 
-- The actual implementation may not be $log(n)$ as we would assume for a binary search. The implementation might be poorly written and thus perform much slower, although this would mean that the runtime is NOT actualy $log(n)$.
+- Lastly the type of input could also account for such a large difference in our estimate compared to the actual runtime. For example when testing with $1,000$ elements the input could've been a best-case or close to best-case input. If the target we're searching for is found after only a few recursive calls then this runtime would look faster than is expected, furthermore if our test with $10,000$ elements was a worst-case or close to worst-case scenario it would still take $log(n)$ time but it would make our estimate much smaller than what a non-best-case test input would lead us to believe.
