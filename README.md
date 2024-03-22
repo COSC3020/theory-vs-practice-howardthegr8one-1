@@ -20,7 +20,7 @@ Add your answers to this markdown file.
 Question 1)
 
 - You could have two algorithms that both have an asymptotic runtime of $O(n^3)$ but one algorithm might have a constant factor such as $5n^3$ whereas the other algorithm might just be $n^3$. Although asymptotically both of these algorithms have the same $O(n^3)$ the one with a constant factor in practice will run much slower than the second algorithm without any constants.
-- Additionally two algorithms could both have a runtime complexity of $O(n^3)$ but exploring further you might find that one of the algorithms is $n^3$ while the other is $5n^3 + 3n^2 + 2n$ in this case the big O is the same but in practice the algorithm with extra lower order terms will run much slower than the algorithm which only runs in $O(n^3)$
+- The type of data being processed could result in drastically different runtimes in practice. For example an algorithm that searches for strings would take longer in practice than the same algorithm searching for an integer.
 - Asymptotic analysis doesn't account for differences in hardware. Insertion sort for example has an average-case runtime of $O(n^2)$ but in practice running insertion sort on large inputs on a raspberry pi will be slower than running it on a gaming desktop or a supercomputer. Even though the runtime complexity doesn't change the actual runtimes will vary because of the difference in faster/slower CPU performance. 
 
 Question 2) 
