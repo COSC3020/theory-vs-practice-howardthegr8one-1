@@ -23,7 +23,7 @@ Question 1)
 - Additionally two algorithms could both have a runtime complexity of $O(n^3)$ but exploring further you might find that one of the algorithms is $n^3$ while the other is $5n^3 + 3n^2 + 2n$ in this case the big O is the same but in practice the algorithm with extra lower order terms will run much slower than the algorithm which only runs in $O(n^3)$
 - Asymptotic analysis doesn't account for differences in hardware. Insertion sort for example has an average-case runtime of $O(n^2)$ but in practice running insertion sort on large inputs on a raspberry pi will be slower than running it on a gaming desktop or a supercomputer. Even though the runtime complexity doesn't change the actual runtimes will vary because of the difference in faster/slower CPU performance. 
 
-Question 2)
+Question 2) 
 
 - Since the runtime to traverse a binary search tree is $log_2(n)$ we can use this to estimate the difference between $log_2(1000)$ and $log_2(10000)$.
 
